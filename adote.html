@@ -80,6 +80,11 @@
       height: 70px;
       resize: vertical;
     }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+    }
   </style>
 </head>
 
@@ -117,8 +122,17 @@
     </div>
   </nav>
 
-  <form action="#" method="post" enctype="multipart/form-data">
-    <h2>Formulário de Adoção</h2>
+  <h2>Formulário de Adoção</h2>
+
+  
+  <form action="https://formsubmit.co/projetoviralata2025@gmail.com" method="POST">
+
+    
+    <input type="hidden" name="_subject" value="Novo formulário de adoção recebido">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/adote.html">
+
 
     <fieldset>
       <legend>Informações Pessoais</legend>
@@ -134,7 +148,7 @@
 
       <label for="fotos">Envie 3 fotos dos ambientes onde o cachorro irá viver:</label>
       <input type="file" id="fotos" name="fotos[]" accept="image/*" multiple required>
-      <small>Por favor, envie fotos de no máx. 5mb cada</small>
+      <small>Por favor, envie fotos de no máximo 5MB cada</small>
 
       <label for="ddd">DDD</label>
       <input type="text" id="ddd" name="ddd" maxlength="2" placeholder="2 dígitos" required>
@@ -192,7 +206,6 @@
         <li><textarea name="q20" placeholder="Concorda em enviar informações e fotos?"></textarea></li>
       </ol>
     </fieldset>
-
     <button type="submit">Enviar formulário</button>
   </form>
 
